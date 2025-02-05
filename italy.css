@@ -173,7 +173,7 @@ ul {
     }
 
     .university-image, .program-image {
-        max-width: 150px; /* Adjust size for mobile */
+       width: 100% /* Adjust size for mobile */
     }
 
     .main-content {

@@ -90,15 +90,24 @@ h2 {
     margin: 20px 0;
 }
 
-.program-image, .university-image {
-    width: 100%;
-
-        border-radius: 10px;
+.program-image,
+.university-image {
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
 }
 
-.program-image:hover, .university-image:hover {
+/* Hide program images in desktop mode */
+@media (min-width: 769px) {
+    .program-image {
+        display: none; /* Hides program images on PC */
+    }
+}
+
+.program-image:hover,
+.university-image:hover {
     transform: scale(1.05);
 }
 
@@ -171,8 +180,8 @@ ul {
         margin-bottom: 10px;
     }
 
-    .university-image, .program-image {
-       width: 100% /* Adjust size for mobile */
+    .university-image {
+        width: 100%; /* Adjust size for mobile */
     }
 
     .main-content {

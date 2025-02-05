@@ -34,14 +34,14 @@ body {
 
 .links {
     display: flex;
-    gap: 15px;
+    gap: 20px; /* Increased gap for better spacing */
     margin-top: 10px;
 }
 
 .links a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 20px; /* Increased padding for buttons */
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
     border: 1px solid transparent; /* Add border for hover effect */
@@ -55,39 +55,42 @@ body {
 
 .main-title {
     text-align: center;
-    margin: 20px 0;
-    font-size: 2.5em;
+    margin: 30px 0; /* Increased margin for better separation */
+    font-size: 3em; /* Larger title for emphasis */
     color: #004d99;
 }
 
 .subtitle {
     text-align: center;
     color: #555;
+    font-size: 1.2em; /* Slightly larger subtitle */
     font-style: italic;
 }
 
 .main-content {
-    margin: 20px;
+    margin: 40px auto; /* Centered and increased margin */
+    max-width: 1200px; /* Set a max width for main content */
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Increased padding for better content spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
     color: #004d99;
-    margin: 20px 0 10px;
+    margin: 20px 0 15px;
     border-bottom: 2px solid #004d99;
     padding-bottom: 5px;
+    font-size: 1.8em; /* Increased heading size */
 }
 
 .program-image, .university-image {
     width: 100%;
-    max-width: 600px; /* Limit the maximum width */
+    max-width: 800px; /* Larger max width for desktop */
     height: auto;
-    border-radius: 8px;
-    margin: 0 auto 15px; /* Center images */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 20px auto; /* Center images with spacing */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .university-list {
@@ -101,14 +104,14 @@ h2 {
     overflow-x: auto; 
     padding: 10px 0;
     scrollbar-width: thin;
-    gap: 10px;
+    gap: 20px; /* Increased gap for better spacing */
     scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 .scrollable-container img {
-    max-width: 200px; /* Ensure all images in the container are of a reasonable size */
+    max-width: 250px; /* Wider images for desktop */
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .scrollable-container::-webkit-scrollbar {
@@ -142,7 +145,7 @@ ul {
 
 .footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #004d99;
     color: white;
     margin-top: 20px;
@@ -165,5 +168,9 @@ ul {
 
     .main-content {
         margin: 10px;
+    }
+
+    .main-title {
+        font-size: 2.5em; /* Adjust title size for mobile */
     }
 }

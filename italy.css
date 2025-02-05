@@ -81,25 +81,18 @@ h2 {
     padding-bottom: 5px;
 }
 
-.program-image {
+.program-image, .university-image {
     width: 100%;
+    max-width: 600px; /* Limit the maximum width */
     height: auto;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin: 0 auto 15px; /* Center images */
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .university-list {
     list-style-type: none;
     padding: 10px 0;
-}
-
-.university-image {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    margin-right: 10px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .scrollable-container {
@@ -110,6 +103,12 @@ h2 {
     scrollbar-width: thin;
     gap: 10px;
     scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.scrollable-container img {
+    max-width: 200px; /* Ensure all images in the container are of a reasonable size */
+    height: auto;
+    border-radius: 8px;
 }
 
 .scrollable-container::-webkit-scrollbar {
@@ -160,15 +159,11 @@ ul {
         margin-bottom: 10px;
     }
 
-    .university-image {
-        width: 150px; 
+    .university-image, .program-image {
+        max-width: 150px; /* Adjust size for mobile */
     }
 
     .main-content {
         margin: 10px;
-    }
-
-    .program-image {
-        margin-bottom: 15px; /* Increased spacing for better appearance */
     }
 }

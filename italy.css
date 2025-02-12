@@ -5,16 +5,16 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Modern font */
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* Light background */
 }
 
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #004d99;
+    background-color: #ff6b81; /* Bright header color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -57,7 +57,7 @@ body {
     text-align: center;
     margin: 30px 0;
     font-size: 3em;
-    color: #004d99;
+    color: #ff6b81; /* Consistent title color */
 }
 
 .subtitle {
@@ -77,9 +77,9 @@ body {
 }
 
 h2 {
-    color: #004d99;
+    color: #ff6b81; /* Consistent heading color */
     margin: 20px 0 15px;
-    border-bottom: 2px solid #004d99;
+    border-bottom: 2px solid #ff6b81;
     padding-bottom: 5px;
     font-size: 1.8em;
 }
@@ -90,23 +90,27 @@ h2 {
     margin: 20px 0;
 }
 
-.program-image,
-.university-image {
-    width: 80%;
-    height: 300px;
+.program-image {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 600px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
 }
 
-/* Hide program images in desktop mode */
-@media (min-width: 769px) {
-    .program-image {
-        display: none; /* Hides program images on PC */
-    }
+.program-image:hover {
+    transform: scale(1.05);
 }
 
-.program-image:hover,
+.university-image {
+    width: 80%; /* Adjust width for university images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
 .university-image:hover {
     transform: scale(1.05);
 }
@@ -164,7 +168,7 @@ ul {
 .footer {
     text-align: center;
     padding: 15px;
-    background-color: #004d99;
+    background-color: #ff6b81; /* Consistent footer color */
     color: white;
     margin-top: 20px;
 }

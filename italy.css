@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ff6b81; /* Bright header color */
+    background-color: #966d6e; /* Bright header color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -168,7 +168,8 @@ ul {
 .footer {
     text-align: center;
     padding: 15px;
-    background-color: #ff6b81; /* Consistent footer color */
+       background-color: #966d6e; /* Bright header color */
+    ; /* Consistent footer color */
     color: white;
     margin-top: 20px;
 }

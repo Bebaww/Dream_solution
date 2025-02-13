@@ -7,35 +7,31 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
     line-height: 1.8;
+    background-color: #f0f4f8; /* Lighter background for contrast */
+    color: #333;
 }
 
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* Header */
+/* Header Styles */
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, #ff6b81, #ffcc00);
-    padding: 15px 20px;
+    background: linear-gradient(80deg, #ffcc00, #704c51); /* Vibrant gradient */
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 10px 10px;
 }
 
 .logo img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border-radius: 50%;
+    margin-bottom: 15px;
 }
 
-/* Navigation */
 .links {
     display: flex;
     gap: 20px;
@@ -44,27 +40,34 @@ body {
 .links a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.2);
-    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.2); /* Adjusted for better contrast */
+    transition: background 0.3s, transform 0.2s;
     font-weight: bold;
 }
 
 .links a:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5); /* Softer hover effect */
+    transform: scale(1.1);
 }
 
 /* Main Content */
 .main {
     margin: 30px auto;
+    width: 90%;
+    max-width: 1200px;
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Image Gallery */
+h1, h2, h3 {
+    color: #ff6b81; /* Consistent use of primary color */
+    margin-bottom: 15px;
+}
+
 .image-gallery {
     display: flex;
     justify-content: center;
@@ -74,33 +77,53 @@ body {
 .scrollable-container {
     display: flex;
     overflow-x: auto;
-    gap: 12px;
     padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #ffcc00 #ddd; /* Match scrollbar with theme */
 }
 
 .scrollable-container img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+    width: 250px;
+    height: 150px;
+    margin-right: 12px;
     border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Contact Section */
 #contact {
-    background: linear-gradient(90deg, #ffcc00, #ff6b81);
+    background: linear-gradient(90deg, #ffcc00, #704c51); /* Reversed gradient for interest */
     color: white;
     padding: 40px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
 }
 
-.social-icons img {
+#contact h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.social-icon {
     width: 35px;
-    margin: 0 10px;
-    transition: 0.3s;
+    height: auto;
+    margin: 0 15px;
+    transition: transform 0.3s;
 }
 
-.social-icons img:hover {
+.social-icon:hover {
     transform: scale(1.2);
 }
 
@@ -108,38 +131,29 @@ body {
 .footer {
     text-align: center;
     padding: 15px;
-    background: #ff6b81;
+    background: #ff6b81; /* Consistent footer color */
     color: white;
+    margin-top: 20px;
     border-radius: 10px 10px 0 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .links {
         flex-direction: column;
         align-items: center;
     }
 
     .scrollable-container img {
-        max-width: 180px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo img {
-        width: 120px;
+        width: 180px;
+        height: 120px;
     }
 
-    .scrollable-container img {
-        max-width: 150px;
+    .main {
+        width: 95%;
+        padding: 20px;
     }
-
-    #contact {
-        padding: 30px;
+    #emails a{
+        font-size: 0.7em;
     }
 }

@@ -40,9 +40,7 @@ body {
 .links a {
     color: white;
     text-decoration: none;
-    /* padding: 12px 20px; */
     border-radius: 6px;
-    /*background: rgba(154, 30, 30, 0.2) Adjusted for better contrast*/
     transition: background 0.3s, transform 0.2s;
     font-weight: bold;
 }
@@ -152,8 +150,5 @@ h1, h2, h3 {
     .main {
         width: 95%;
         padding: 20px;
-    }
-    #emails a{
-        font-size: 0.7em;
     }
 }

@@ -40,9 +40,9 @@ body {
 .links a {
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
+    /* padding: 12px 20px; */
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.2); /* Adjusted for better contrast */
+    /*background: rgba(154, 30, 30, 0.2) Adjusted for better contrast*/
     transition: background 0.3s, transform 0.2s;
     font-weight: bold;
 }
